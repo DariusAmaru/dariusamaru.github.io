@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+
+	<head>
+
+			<meta charset="utf-8">
+
+			<title>First Object</title>
+
+	</head>
+
+	<body>
+
+
+<div id="hairContent"></div>
+
+<button onclick="hair.notice()">Name</button><br>
+<p>Girl's name</p>
+
+<button onclick="propertyNames()">Bill</button>
+<p>Bill Description</p>
+
+<script>
+
+var hair = {
+	bill:'Susie',
+	blonde:'Brown',
+	short:'Curly',
+	notice: function() {
+		alert(this.bill);	
+	}
+}
+
+function propertyNames() {
+	for (x in hair){
+		alert(x);
+	}
+}
+
+</script>
+
+
+</body>
+
+
+</html>
